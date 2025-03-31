@@ -63,28 +63,35 @@
       margin-top: 0.8rem;
     }
 
+    /* Bio grid styling */
     .team-grid {
       display: flex;
       flex-wrap: wrap;
-      gap: 30px;
       justify-content: center;
+      gap: 40px;
       margin-top: 30px;
     }
     .member {
       text-align: center;
-      max-width: 180px;
+      width: 180px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .member img {
       width: 120px;
       height: 120px;
-      border-radius: 50%;
       object-fit: cover;
+      border-radius: 50%;
       border: 3px solid #007bff;
       margin-bottom: 10px;
     }
+    .member p {
+      margin: 0.3em 0;
+    }
     .member strong {
-      font-size: 1.05rem;
-      color: #2c046b;
+      font-size: 1rem;
+      color: #4b0082;
     }
   </style>
 </head>
@@ -104,7 +111,7 @@
   <a href="#media">Media</a>
 </nav>
 
-<section id="overview" class="content-section">
+<section id="overview" class="card">
   <h2>Overview</h2>
   <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 20px;">
     <div style="flex: 1; min-width: 300px;">
@@ -155,7 +162,7 @@
         <img src="naiquipicture.png" alt="Naiqui Armendariz">
         <p><strong>Naiqui Armendariz</strong></p>
       </a>
-      <p>AE/ME – Team Lead, Systems Design</p>
+      <p>AE/ME – Team Lead<br>Systems Design</p>
     </div>
 
     <div class="member">
@@ -163,7 +170,7 @@
         <img src="roberto.jpg" alt="Roberto Moreno">
         <p><strong>Roberto Moreno</strong></p>
       </a>
-      <p>ME – Filtration & CAD Specialist</p>
+      <p>ME – Filtration &<br>CAD Specialist</p>
     </div>
 
     <div class="member">
@@ -171,7 +178,7 @@
         <img src="sohan.png" alt="Sohan Dissanayake">
         <p><strong>Sohan Dissanayake</strong></p>
       </a>
-      <p>AE/ME – Sensors & Data Analyst</p>
+      <p>AE/ME – Sensors &<br>Data Analyst</p>
     </div>
 
     <div class="member">
@@ -179,7 +186,7 @@
         <img src="tj.png" alt="TJ Bell">
         <p><strong>TJ Bell</strong></p>
       </a>
-      <p>EP – Water Testing & Field Operations</p>
+      <p>EP – Water Testing &<br>Field Operations</p>
     </div>
 
     <div class="member">
@@ -187,7 +194,7 @@
         <img src="wyatt.png" alt="Wyatt Ziehe">
         <p><strong>Wyatt Ziehe</strong></p>
       </a>
-      <p>AE/ME – Soil Simulation & Electronics</p>
+      <p>AE/ME – Soil Simulation &<br>Electronics</p>
     </div>
 
   </div>
