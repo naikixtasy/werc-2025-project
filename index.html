@@ -1,77 +1,128 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Renewable Energy Water Restoration Project</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>WERC 2025 – Renewable Energy Solution</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f8fc;
+      color: #222;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #005999;
+      text-align: center;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #003366;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 0.4rem;
+    }
+    .card {
+      background-color: white;
+      padding: 1.5rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #eaeaea;
+      color: #666;
+      font-size: 0.9rem;
+    }
+    a.button {
+      background-color: #005999;
+      color: white;
+      padding: 0.6rem 1rem;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 0.8rem;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Renewable Energy Solution for Water & Environmental Restoration</h1>
-        <p class="team">Team: Naiqui Armendariz, Roberto Moreno, Sohan Dissanayake, TJ Bell, Wyatt Ziehe</p>
-    </header>
 
-    <main>
-        <section>
-            <h2>Overview</h2>
-            <p>Wildfire recovery project using wind-powered water filtration and real-time soil monitoring.</p>
-        </section>
+<header>
+  <h1>Renewable Energy Solution for Water & Environmental Restoration</h1>
+  <p>WERC 2025 Design Contest</p>
+</header>
 
-        <section>
-            <h2>Final Report</h2>
-            <p><a href="FINAL_REPORT_24-NMSU-6.pdf" target="_blank">View Final Report (PDF)</a></p>
-        </section>
+<nav>
+  <a href="#overview">Overview</a>
+  <a href="#report">Final Report</a>
+  <a href="#cad">CAD Drawings</a>
+  <a href="#data">Test Data</a>
+  <a href="#bios">Team Bios</a>
+  <a href="#media">Media</a>
+</nav>
 
-        <section>
-            <h2>CAD Drawings</h2>
-            <a href="Appendix_B_CAD_Drawings.zip" target="_blank" class="button">View CAD files</a>
-        </section>
+<section id="overview" class="card">
+  <h2>Overview</h2>
+  <p>This project provides a low-cost, renewable-energy-powered system for water purification and real-time soil moisture monitoring, tailored to aid wildfire-affected ecosystems.</p>
+</section>
 
-        <section>
-            <h2>Test Data</h2>
-            <a href="Test_Data.xlsx" target="_blank" class="button">View water quality results</a>
-        </section>
+<section id="report" class="card">
+  <h2>Final Report</h2>
+  <p>Download the full engineering assessment and testing documentation below:</p>
+  <a class="button" href="final_report.pdf" target="_blank">📄 Download Final Report (PDF)</a>
+</section>
 
-        <section>
-            <h2>Media & Photos</h2>
-            <a href="Photos_Gallery.zip" target="_blank" class="button">View images of testing and prototype</a>
-        </section>
+<section id="cad" class="card">
+  <h2>CAD Drawings</h2>
+  <p>Explore design models and system schematics.</p>
+  <a class="button" href="cad_drawings.pdf" target="_blank">📐 View CAD Drawings</a>
+</section>
 
-        <section>
-            <h2>Team Bios</h2>
-            <div class="bios">
-                <div class="bio">
-                    <h3>Naiqui Armendariz</h3>
-                    <p>Aerospace & Mechanical Engineering major, project leader, specializing in structures and materials. Experienced in AI, robotics, and sustainable engineering.</p>
-                    <a href="naiqui_resume.pdf" target="_blank">View Resume</a>
-                </div>
-                <div class="bio">
-                    <h3>Roberto Moreno</h3>
-                    <p>Mechanical Engineering major with experience in system integration and structural design. Contributed to construction and filtration analysis.</p>
-                    <a href="roberto_resume.pdf" target="_blank">View Resume</a>
-                </div>
-                <div class="bio">
-                    <h3>Sohan Dissanayake</h3>
-                    <p>Aerospace & Mechanical Engineering major, focused on CAD design and prototyping. Supported electronics and final report editing.</p>
-                    <a href="sohan_resume.pdf" target="_blank">View Resume</a>
-                </div>
-                <div class="bio">
-                    <h3>TJ Bell</h3>
-                    <p>Environmental sciences and policy-focused team member. Gathered and analyzed field data, filtration media, and testing setup logistics.</p>
-                    <a href="tj_resume.pdf" target="_blank">View Resume</a>
-                </div>
-                <div class="bio">
-                    <h3>Wyatt Ziehe</h3>
-                    <p>AE/ME major specializing in electronics, sensor integration, and field testing. Led the data collection phase of the project.</p>
-                    <a href="wyatt_resume.pdf" target="_blank">View Resume</a>
-                </div>
-            </div>
-        </section>
-    </main>
+<section id="data" class="card">
+  <h2>Test Data</h2>
+  <p>Includes flow rate data, conductivity, pH, turbidity results, and heavy metals testing outcomes.</p>
+  <a class="button" href="test_results.xlsx" target="_blank">📊 Download Data (Excel)</a>
+</section>
 
-    <footer>
-        <p>© 2025 WERC Environmental Design Contest Team</p>
-    </footer>
+<section id="bios" class="card">
+  <h2>Team Member Bios</h2>
+  <ul>
+    <li><strong>Naiqui Armendariz</strong> – AE/ME, Team Lead, Systems Design <a href="naiqui_resume.pdf" target="_blank">(Resume)</a></li>
+    <li><strong>Roberto Moreno</strong> – ME, Filtration & CAD Specialist <a href="roberto_resume.pdf" target="_blank">(Resume)</a></li>
+    <li><strong>Sohan Dissanayake</strong> – AE/ME, Sensors & Data Analyst <a href="sohan_resume.pdf" target="_blank">(Resume)</a></li>
+    <li><strong>TJ Bell</strong> – EP, Water Testing & Field Operations <a href="tj_resume.pdf" target="_blank">(Resume)</a></li>
+    <li><strong>Wyatt Ziehe</strong> – AE/ME, Soil Simulation & Electronics <a href="wyatt_resume.pdf" target="_blank">(Resume)</a></li>
+  </ul>
+</section>
+
+<section id="media" class="card">
+  <h2>Media & Photos</h2>
+  <p>Photos of testing, construction, electronics, and more.</p>
+  <a class="button" href="media_gallery.html" target="_blank">🖼️ View Project Photos</a>
+</section>
+
+<footer>
+  <p>&copy; 2025 WERC Team - Renewable Water Project. Hosted via GitHub Pages.</p>
+</footer>
+
 </body>
 </html>
