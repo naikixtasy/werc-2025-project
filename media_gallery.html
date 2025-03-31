@@ -2,86 +2,83 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Project Media Gallery</title>
+  <title>Project Photo Gallery</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       background-color: #f4f8fc;
       margin: 0;
-      padding: 2rem;
-    }
-    h2 {
-      text-align: center;
-      color: #003366;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-    .gallery img {
-      width: 250px;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-      transition: transform 0.3s ease;
-      cursor: pointer;
-    }
-    .gallery img:hover {
-      transform: scale(1.05);
+      padding: 0;
     }
 
-    .lightbox {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: rgba(0,0,0,0.8);
-      display: none;
-      align-items: center;
-      justify-content: center;
-      z-index: 1000;
+    h1 {
+      text-align: center;
+      color: #003366;
+      padding: 1.5rem 0 0.5rem 0;
     }
-    .lightbox img {
-      max-width: 90vw;
-      max-height: 90vh;
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .photo-card {
+      background: white;
       border-radius: 10px;
-      box-shadow: 0 0 25px rgba(255,255,255,0.3);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-card:hover {
+      transform: scale(1.02);
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .caption {
+      padding: 1rem;
+      text-align: center;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .back-button {
+      display: block;
+      width: fit-content;
+      margin: 2rem auto;
+      background-color: #005999;
+      color: white;
+      padding: 0.6rem 1.2rem;
+      text-decoration: none;
+      border-radius: 5px;
     }
   </style>
 </head>
 <body>
+  <h1>🌱 Prototype Build & Testing Gallery</h1>
 
-<h2>🌱 Prototype Build & Testing Gallery</h2>
+  <div class="gallery">
+    <div class="photo-card"><img src="system1.jpg" alt="System Photo 1"><div class="caption">System Photo 1</div></div>
+    <div class="photo-card"><img src="system2.jpg" alt="System Photo 2"><div class="caption">System Photo 2</div></div>
+    <div class="photo-card"><img src="system3.jpg" alt="System Photo 3"><div class="caption">System Photo 3</div></div>
+    <div class="photo-card"><img src="system4.jpg" alt="System Photo 4"><div class="caption">System Photo 4</div></div>
+    <div class="photo-card"><img src="system5.jpg" alt="System Photo 5"><div class="caption">System Photo 5</div></div>
+    <div class="photo-card"><img src="system6.jpg" alt="System Photo 6"><div class="caption">System Photo 6</div></div>
+    <div class="photo-card"><img src="system7.jpg" alt="System Photo 7"><div class="caption">System Photo 7</div></div>
+    <div class="photo-card"><img src="system8.jpg" alt="System Photo 8"><div class="caption">System Photo 8</div></div>
+    <div class="photo-card"><img src="system9.jpg" alt="System Photo 9"><div class="caption">System Photo 9</div></div>
+  </div>
 
-<div class="gallery">
-  <img src="systema1.jpg" alt="System Photo 1" onclick="showLightbox(this.src)">
-  <img src="systema2.jpg" alt="System Photo 2" onclick="showLightbox(this.src)">
-  <img src="systema3.jpg" alt="System Photo 3" onclick="showLightbox(this.src)">
-  <img src="systema4.jpg" alt="System Photo 4" onclick="showLightbox(this.src)">
-  <img src="systema5.jpg" alt="System Photo 5" onclick="showLightbox(this.src)">
-  <img src="systema6.jpg" alt="System Photo 6" onclick="showLightbox(this.src)">
-  <img src="systema7.jpg" alt="System Photo 7" onclick="showLightbox(this.src)">
-  <img src="systema8.jpg" alt="System Photo 8" onclick="showLightbox(this.src)">
-  <img src="systema9.jpg" alt="System Photo 9" onclick="showLightbox(this.src)">
-</div>
-
-<div class="lightbox" id="lightbox" onclick="hideLightbox()">
-  <img id="lightbox-img" src="">
-</div>
-
-<script>
-  function showLightbox(src) {
-    const lightbox = document.getElementById("lightbox");
-    const img = document.getElementById("lightbox-img");
-    img.src = src;
-    lightbox.style.display = "flex";
-  }
-  function hideLightbox() {
-    document.getElementById("lightbox").style.display = "none";
-  }
-</script>
-
+  <a class="back-button" href="index.html">⬅️ Back to Main Page</a>
 </body>
 </html>
