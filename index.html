@@ -10,7 +10,9 @@
     width: 100% !important;
   }
 }
-  
+  <!-- Lightbox2 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/css/lightbox.min.css" rel="stylesheet">
+
     
     .news-button {
   text-align: center;
@@ -319,20 +321,26 @@
 
 <section id="media" class="card">
   <h2>Media & Photos</h2>
-  <p>Explore images of our construction, testing, CADs, and field deployment:</p>
+  <p>Click any image to view it larger in our lightbox gallery:</p>
   <div style="display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-top: 20px;">
-    <img src="prototype1.jpg" alt="Prototype 1" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" />
-    <img src="prototype2.jpg" alt="Prototype 2" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" />
-    <img src="testing1.jpg" alt="Testing Phase" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" />
-    <img src="filter_build.jpg" alt="Filter Construction" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" />
-    <img src="group1.jpg" alt="Team Photo" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" />
-    <img src="werc_sign.jpg" alt="WERC Contest Sign" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" />
+    <a href="Media1.jpg" data-lightbox="gallery" data-title="Windmill Setup"><img src="Media1.jpg" alt="Field setup 1" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" /></a>
+    <a href="media2.jpeg" data-lightbox="gallery" data-title="Testing Unit"><img src="media2.jpeg" alt="Testing unit" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" /></a>
+    <a href="media3.jpg" data-lightbox="gallery" data-title="Sensor Setup"><img src="media3.jpg" alt="Sensor setup" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" /></a>
+    <a href="media5.heic" data-lightbox="gallery" data-title="Build Progress A"><img src="media5.heic" alt="Construction view A" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" /></a>
+    <a href="media6.heic" data-lightbox="gallery" data-title="Build Progress B"><img src="media6.heic" alt="Construction view B" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" /></a>
+    <a href="Media7.png" data-lightbox="gallery" data-title="Wiring & Electronics"><img src="Media7.png" alt="Windmill electronics" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" /></a>
+    <a href="Media8.jpg" data-lightbox="gallery" data-title="Full System"><img src="Media8.jpg" alt="Complete system build" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" /></a>
+    <a href="Media9.jpg" data-lightbox="gallery" data-title="WERC Site"><img src="Media9.jpg" alt="WERC testing zone" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" /></a>
+    <a href="Media10.jpeg" data-lightbox="gallery" data-title="System Close-Up"><img src="Media10.jpeg" alt="Prototype close-up" style="width: 220px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.15);" /></a>
   </div>
 </section>
+
 
 <footer>
   <p>&copy; 2025 WERC Team - Renewable Water Project. Hosted via GitHub Pages. Designed and created by Naiqui Armendariz</p>
 </footer>
+<!-- Lightbox2 JS -->
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.4/dist/js/lightbox.min.js"></script>
 
 </body>
 </html>
