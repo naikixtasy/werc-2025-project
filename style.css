@@ -236,3 +236,13 @@ footer {
   transform: scale(1.03);
   box-shadow: 0 0 20px rgba(164, 105, 255, 0.4);
 }
+.fade-in-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

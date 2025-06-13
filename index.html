@@ -148,11 +148,34 @@
       color: #d6c8ff;
     }
   </style>
+
 </head>
 <body>
 <div id="tsparticles"></div>
 
 <!-- ORIGINAL WERC CONTENT SHOULD GO HERE -->
+<section class="card fade-in-scroll" style="background: rgba(0, 0, 0, 0.3); border-left: 6px solid #0073b1; margin-top: 3rem;">
+  <h2 style="text-align: center; color: #94f0ff; font-size: 1.8rem;">🌟 Featured on LinkedIn</h2>
+  <p style="text-align: center; font-size: 1rem; color: #ddd;">
+    Our WERC 2025 project was officially recognized by the <strong>NMSU College of Engineering</strong>!<br>
+    Congratulations to team lead <strong>Naiqui Armendariz</strong> for this spotlight moment.
+  </p>
+
+  <div style="text-align: center;">
+    <a href="https://www.linkedin.com/posts/coenm_congratulations-to-naiqui-armendariz-for-activity-7337942777596362752-sHXo" target="_blank">
+      <img src="linkedin_feature_preview.png" 
+           alt="LinkedIn Recognition" 
+           style="width: 45%; max-width: 360px; border-radius: 12px; box-shadow: 0 0 16px rgba(0,0,0,0.4); margin-bottom: 1rem;">
+    </a><br>
+
+    <a href="https://www.linkedin.com/posts/coenm_congratulations-to-naiqui-armendariz-for-activity-7337942777596362752-sHXo" 
+       target="_blank" 
+       style="background: linear-gradient(to right, #0e76a8, #0073b1); color: white; padding: 10px 18px; font-weight: bold; border-radius: 8px; text-decoration: none; font-size: 0.95rem;">
+      🔗 View Full LinkedIn Post
+    </a>
+  </div>
+</section>
+
 
 <script>
   tsParticles.load("tsparticles", {
@@ -506,5 +529,24 @@
       }
     });
   </script>
+<!-- ...tu contenido HTML arriba... -->
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  });
+
+  document.querySelectorAll('.fade-in-scroll').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+
+</body>
+</html>
+
 </body>
 </html> 
