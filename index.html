@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -147,10 +150,37 @@
   </style>
 </head>
 <body>
-  <div id="tsparticles"></div>
+<div id="tsparticles"></div>
 
+<!-- ORIGINAL WERC CONTENT SHOULD GO HERE -->
+
+<script>
+  tsParticles.load("tsparticles", {
+    fullScreen: { enable: false },
+    background: { color: "transparent" },
+    particles: {
+      number: { value: 80 },
+      size: { value: 2.5 },
+      move: { enable: true, speed: 0.6 },
+      opacity: { value: 0.45 },
+      color: { value: "#ffffff" },
+      links: { enable: true, color: "#ffe0ff", distance: 100 }
+    },
+    interactivity: {
+      events: {
+        onHover: { enable: true, mode: "grab" },
+        onClick: { enable: true, mode: "push" }
+      },
+      modes: {
+        grab: { distance: 120, line_linked: { opacity: 0.8 } },
+        push: { quantity: 4 }
+      }
+    }
+  });
+</script>
+</body>
   
-<!-- Paste all sections like header, nav, all <section> blocks from your WERC project page here -->
+
 <header>
   <h1>Renewable Energy Solution for Water & Environmental Restoration</h1>
   <p>WERC 2025 Design Contest</p>
