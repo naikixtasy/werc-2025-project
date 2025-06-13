@@ -222,3 +222,9 @@ footer {
     max-width: 500px;
   }
 </style>
+
+#financial-summary p, 
+#projection p {
+  color: #eeeeff;
+}
+
