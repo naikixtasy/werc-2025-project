@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>WERC 2025 Project – Naiqui M. Armendariz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WERC 2025 Project – Naiqui Armendariz</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
   <style>
@@ -30,6 +30,15 @@
       box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4);
     }
 
+    header img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #9b5de5;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
     header h1 {
       font-size: 2.5rem;
       margin: 0;
@@ -50,7 +59,7 @@
       position: sticky;
       top: 0;
       padding: 1rem 0;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       z-index: 10;
     }
 
@@ -84,177 +93,147 @@
     }
   </style>
 </head>
+
 <body>
-<div id="tsparticles"></div>
+  <div id="tsparticles"></div>
 
-<header>
-  <h1>WERC 2025 – Renewable Energy & Water Restoration</h1>
-  <p>Designed by Naiqui M. Armendariz and team – Winner of the Terry McManus Outstanding Student Award</p>
-</header>
+  <header>
+    <img src="naiqui.jpg" alt="Naiqui Armendariz">
+    <h1>WERC 2025 Project</h1>
+    <p>Renewable Energy & Water Filtration System</p>
+  </header>
 
-<nav>
-  <a href="index.html">🏠 Home</a>
-  <a href="#overview">Overview</a>
-  <a href="#system">System Design</a>
-  <a href="#media">Media</a>
-  <a href="#team">Team</a>
-  <a href="#awards">Awards</a>
-  <button id="muteBtn" title="Toggle Music">🔊</button>
-</nav>
-<section id="overview">
-  <h2>🔍 Project Overview</h2>
-  <div class="about-card">
-    <p>
-      This award-winning project was designed for the 35th WERC Environmental Design Contest. Our team developed a wind-powered, sustainable water filtration system aimed at accelerating ecological recovery after wildfires. The system operates off-grid, using natural filtration media and sensor-based monitoring for real-time feedback.
-    </p>
-    <p>
-      It earned the <strong>Terry McManus Outstanding Student Award</strong> for its innovation, environmental impact, and community relevance. The project combined field research, CAD/FEA design, electronics, and hands-on prototyping to deliver a scalable solution for burned soils and contaminated water sources.
-    </p>
-  </div>
-</section>
+  <nav>
+    <a href="#overview">Overview</a>
+    <a href="#media">Media</a>
+    <a href="#team">Team</a>
+    <a href="#report">Final Report</a>
+    <a href="https://naiquiarmendariz.github.io" target="_blank">← Back to Main</a>
+    <button id="muteBtn" title="Toggle Music">🔊</button>
+  </nav>
+  <main>
+    <section id="overview" style="padding: 4rem 10%; max-width: 1000px; margin: auto; background: rgba(255, 255, 255, 0.05); border-radius: 20px; box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);">
+      <h2 style="text-align:center; color:#dbaaff;">🌿 Project Overview</h2>
+      <p>
+        Our project, <strong>"Renewable Energy Solution for Water & Environmental Restoration"</strong>, aims to provide a sustainable wind-powered water filtration system for areas affected by wildfires. The solution integrates natural filtration media (gravel, sand, lava rock, activated coconut charcoal, cotton), real-time humidity and temperature sensors, a Grove LCD RGB display, and soil health monitoring.
+      </p>
+      <p>
+        The system is designed to accelerate soil recovery while providing educational and sustainable infrastructure to underserved communities. The modular setup allows for deployment in diverse terrain and post-fire scenarios.
+      </p>
+      <p>
+        This project was awarded the <strong>Terry McManus Outstanding Student Award</strong> during the <strong>35th WERC Environmental Design Contest</strong>.
+      </p>
+    </section>
 
-<section id="system">
-  <h2>🛠️ System Design</h2>
-  <div class="about-card">
-    <p>
-      The system was structured around three key pillars:
-    </p>
-    <ul>
-      <li><strong>Wind-Powered Pumping:</strong> A vertical-axis wind turbine drives water through the system without external electricity.</li>
-      <li><strong>Multi-Layer Natural Filtration:</strong> The design uses gravel, sand, lava rock, activated coconut charcoal, and cotton layers to purify water.</li>
-      <li><strong>Real-Time Monitoring:</strong> Integrated sensors (AHT20 for humidity/temperature, soil moisture, and turbidity) collect live data via an ESP8266 microcontroller and Arduino.</li>
-    </ul>
-    <p>
-      CAD drawings and a physical prototype were fabricated using 3D printing and laser cutting technologies.
-    </p>
-  </div>
-</section>
+    <section id="media" style="padding: 4rem 10%; max-width: 1000px; margin: auto;">
+      <h2 style="text-align:center; color:#dbaaff;">📸 Media & Photos</h2>
+      <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:1.5rem;">
+        <img src="photo1.jpg" alt="System photo 1" style="width:280px; border-radius:10px;">
+        <img src="photo2.jpg" alt="System photo 2" style="width:280px; border-radius:10px;">
+        <img src="photo3.jpg" alt="System photo 3" style="width:280px; border-radius:10px;">
+        <img src="photo4.jpg" alt="System photo 4" style="width:280px; border-radius:10px;">
+      </div>
+    </section>
 
-<section id="media">
-  <h2>📸 Media & Photos</h2>
-  <div class="about-card" style="text-align:center">
-    <img src="werc_badge.jpg" alt="WERC Badge" style="height:80px; margin: 1rem;" />
-    <img src="system_photo1.jpg" alt="System 1" style="height:200px; margin:1rem;" />
-    <img src="system_photo2.jpg" alt="System 2" style="height:200px; margin:1rem;" />
-    <div style="margin-top:2rem;">
-      <video width="480" controls>
-        <source src="werc_demo.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-  </div>
-</section>
-<section id="team">
-  <h2>🤝 Team Members</h2>
-  <div class="about-card">
-    <ul>
-      <li><strong>Naiqui M. Armendariz</strong> – Lead Engineer | CAD, Prototyping, Automation, Technical Writing</li>
-      <li><strong>Roberto Moreno</strong> – Environmental Research & Analysis</li>
-      <li><strong>Sohan Dissanayake</strong> – Electronics & Sensor Integration</li>
-      <li><strong>TJ Bell</strong> – Testing & Mechanical Support</li>
-      <li><strong>Wyatt Ziehe</strong> – Soil Filtration Systems & Community Logistics</li>
-    </ul>
-    <p style="margin-top:1rem;">
-      <em>Each member brought a unique skillset, contributing to a system where engineering, sustainability, and teamwork merged seamlessly.</em>
-    </p>
-  </div>
-</section>
+    <section id="team" style="padding: 4rem 10%; max-width: 1000px; margin: auto;">
+      <h2 style="text-align:center; color:#dbaaff;">🧑‍🔬 Meet the Team</h2>
+      <ul>
+        <li><strong>Naiqui M. Armendariz</strong> – Lead Engineer | Design & Prototyping | LinkedIn: <a href="https://linkedin.com/in/naiquiarmendariz" target="_blank">View Profile</a></li>
+        <li><strong>Roberto Moreno</strong> – Electronics & Assembly | Resume: <a href="roberto.html" target="_blank">View</a></li>
+        <li><strong>Sohan Dissanayake</strong> – Water Systems | Resume: <a href="sohan.html" target="_blank">View</a></li>
+        <li><strong>TJ Bell</strong> – Structural Design & Sensor Mounting | Resume: <a href="tj.html" target="_blank">View</a></li>
+        <li><strong>Wyatt Ziehe</strong> – Soil Testing & Filtration | Resume: <a href="wyatt.html" target="_blank">View</a></li>
+      </ul>
+    </section>
+    <section id="documents" style="padding: 4rem 10%; max-width: 1000px; margin: auto;">
+      <h2 style="text-align:center; color:#dbaaff;">📄 Reports & Documentation</h2>
+      <ul>
+        <li><a href="werc_final_report.pdf" target="_blank">📘 Final Report (PDF)</a></li>
+        <li><a href="cad_drawings.zip" target="_blank">📁 CAD Files (ZIP)</a></li>
+        <li><a href="cost_appendix.pdf" target="_blank">🧾 Cost Appendix</a></li>
+        <li><a href="system_diagram.png" target="_blank">🖼️ System Diagram</a></li>
+      </ul>
+    </section>
 
-<section id="awards">
-  <h2>🏅 Awards & Recognition</h2>
-  <div class="about-card">
-    <ul>
-      <li><strong>🥇 Terry McManus Outstanding Student Award</strong> – WERC 2025</li>
-      <li><strong>🏆 1st Place – SSEP Mission 1</strong> (Awarded in 2012 at EPCC for Scientific Research Excellence)</li>
-      <li><strong>🌐 Selected by NCESSE</strong> – ISS flight through Student Spaceflight Experiments Program</li>
-    </ul>
-    <p>
-      The WERC 2025 project was recognized for its innovation, sustainability, and impact. Previous ISS-based research was also featured in national science communication platforms.
-    </p>
-  </div>
-</section>
+    <section id="awards" style="padding: 4rem 10%; max-width: 1000px; margin: auto;">
+      <h2 style="text-align:center; color:#dbaaff;">🏅 Recognition & Awards</h2>
+      <p>
+        Our project received the <strong>Terry McManus Outstanding Student Award</strong> at the <strong>35th Annual WERC Environmental Design Contest</strong> for innovation, sustainability, and team collaboration.
+      </p>
+      <img src="werc_badge.jpg" alt="Award Badge" style="display:block; margin:2rem auto; height:100px;">
+    </section>
 
-<section id="contact">
-  <h2>📬 Contact & Links</h2>
-  <div class="about-card" style="text-align:center;">
-    <p>📧 <a href="mailto:naikixtasy86@gmail.com">naikixtasy86@gmail.com</a></p>
-    <p>🔗 <a href="https://linkedin.com/in/naiquiarmendariz" target="_blank">LinkedIn</a></p>
-    <p>📂 <a href="https://naikixtasy.github.io" target="_blank">Main Portfolio</a></p>
-  </div>
-</section>
-<!-- Back to Top Button -->
-<button id="backToTop" title="Back to Top">⬆️</button>
+    <section id="contact" style="padding: 4rem 10%; max-width: 1000px; margin: auto; text-align: center;">
+      <h2 style="color:#dbaaff;">📬 Contact Us</h2>
+      <p>💌 For questions or collaborations, email us at: <a href="mailto:naikixtasy86@gmail.com">naikixtasy86@gmail.com</a></p>
+      <p>🌐 Return to <a href="https://naikixtasy.github.io/naiquiarmendariz.github.io/" target="_blank">Naiqui's Portfolio</a></p>
+    </section>
 
-<!-- Footer -->
-<footer>
-  <p>© 2025 Naiqui M. Armendariz — WERC Project Page | Designed with 💜 and sustainability in mind</p>
-</footer>
+    <footer style="text-align:center; margin:3rem 0; color:#ccc;">
+      <p>© 2025 WERC 2025 Team – Project by students of New Mexico State University</p>
+    </footer>
+    <!-- Audio Files -->
+    <audio id="bgMusic" loop autoplay src="space-theme.mp3"></audio>
+    <audio id="hoverSound" src="hover.mp3" preload="auto"></audio>
 
-<!-- Particle Background -->
-<div id="tsparticles"></div>
+    <!-- Back to Top Button -->
+    <button id="backToTop" title="Back to Top" style="position:fixed; bottom:20px; right:20px; background:#9b5de5; color:#fff; border:none; padding:.8rem; font-size:1.2rem; border-radius:50%; cursor:pointer; display:none;">⬆️</button>
 
-<!-- Background Audio -->
-<audio id="bgMusic" loop autoplay src="space-theme.mp3"></audio>
-<audio id="hoverSound" src="hover.mp3" preload="auto"></audio>
+    <!-- Scripts -->
+    <script>
+      // Particle Background
+      tsParticles.load("tsparticles", {
+        fullScreen: { enable: false },
+        background: { color: "transparent" },
+        particles: {
+          number: { value: 50 },
+          size: { value: 2 },
+          move: { enable: true, speed: 0.3 },
+          opacity: { value: 0.5 },
+          color: { value: "#ffffff" },
+          links: { enable: true, color: "#ffffff", distance: 100 }
+        },
+        interactivity: {
+          events: {
+            onHover: { enable: true, mode: "repulse" },
+            onClick: { enable: true, mode: "push" }
+          },
+          modes: {
+            repulse: { distance: 80 },
+            push: { quantity: 4 }
+          }
+        }
+      });
 
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/tsparticles@2.11.1/tsparticles.bundle.min.js"></script>
-<script>
-  // Particles background
-  tsParticles.load("tsparticles", {
-    fullScreen: { enable: false },
-    background: { color: "transparent" },
-    particles: {
-      number: { value: 60 },
-      size: { value: 2 },
-      move: { enable: true, speed: 0.4 },
-      opacity: { value: 0.5 },
-      color: { value: "#ffffff" },
-      links: { enable: true, color: "#ffffff", distance: 100 }
-    },
-    interactivity: {
-      events: {
-        onHover: { enable: true, mode: "repulse" },
-        onClick: { enable: true, mode: "push" }
-      },
-      modes: {
-        repulse: { distance: 80 },
-        push: { quantity: 4 }
-      }
-    }
-  });
+      // Mute Button Logic
+      const bgMusic = document.getElementById("bgMusic");
+      const muteBtn = document.getElementById("muteBtn");
+      muteBtn.addEventListener("click", () => {
+        if (bgMusic.paused) {
+          bgMusic.play();
+          muteBtn.textContent = "🔈";
+        } else {
+          bgMusic.pause();
+          muteBtn.textContent = "🔊";
+        }
+      });
+      document.addEventListener("DOMContentLoaded", () => {
+        muteBtn.textContent = bgMusic.paused ? "🔊" : "🔈";
+      });
 
-  // Back to top button
-  const backBtn = document.getElementById('backToTop');
-  window.onscroll = () => {
-    backBtn.style.display = window.scrollY > 200 ? 'block' : 'none';
-  };
-  backBtn.onclick = () => window.scrollTo({ top: 0, behavior: 'smooth' });
+      // Hover Sound
+      document.querySelectorAll('nav a, nav button').forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          const s = document.getElementById('hoverSound');
+          s.currentTime = 0;
+          s.play();
+        });
+      });
 
-  // Mute toggle
-  const bg = document.getElementById('bgMusic');
-  const muteBtn = document.getElementById('muteBtn');
-  if (muteBtn) {
-    muteBtn.addEventListener('click', () => {
-      if (bg.paused) {
-        bg.play();
-        muteBtn.textContent = '🔈';
-      } else {
-        bg.pause();
-        muteBtn.textContent = '🔊';
-      }
-    });
-    document.addEventListener('DOMContentLoaded', () => {
-      muteBtn.textContent = bg.paused ? '🔊' : '🔈';
-    });
-  }
-
-  // Hover sound on navbar
-  document.querySelectorAll('nav a, nav button').forEach(el => {
-    el.addEventListener('mouseenter', () => {
-      const s = document.getElementById('hoverSound');
-      s.currentTime = 0;
-      s.play();
-    });
-  });
-</script>
+      // Back to Top
+      const backBtn = document.getElementById("backToTop");
+      window.onscroll = () => {
+        backBtn.style.display = window.scrollY > 200 ? "block" : "none";
+      };
+      backBtn.onclick = () => window.scrollTo({ top: 0, behavior: "smooth" });
+    </script>
