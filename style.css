@@ -223,3 +223,16 @@ footer {
 #projection p {
   color: #eeeeff;
 }
+.small-graph {
+  width: 60%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: zoom-in;
+}
+
+.small-graph:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(164, 105, 255, 0.4);
+}
