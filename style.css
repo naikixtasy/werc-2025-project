@@ -169,3 +169,56 @@ footer {
   cursor: pointer;
   display: none;
 }
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to bottom right, #0d001a, #1b0033);
+    color: #fff;
+    overflow-x: hidden;
+  }
+
+  /* ... your existing CSS ... */
+
+  /* 👇 Paste the new styles here 👇 */
+  #financial-summary,
+  #projection {
+    background-color: rgba(250, 250, 250, 0.05);
+    padding: 2rem;
+    border-radius: 20px;
+    color: #e0d0ff;
+    box-shadow: 0 0 15px rgba(155, 93, 229, 0.1);
+  }
+
+  #financial-summary ul li,
+  #projection ul li {
+    color: #ccf3ff;
+  }
+
+  #financial-summary img,
+  #projection img {
+    max-width: 85%;
+    height: auto;
+    border-radius: 12px;
+    margin-top: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  #financial-summary ul strong {
+    color: #fbbdff;
+  }
+
+  #financial-summary ul {
+    font-size: 1rem;
+  }
+
+  #projection ul {
+    font-size: 1rem;
+    padding-left: 1.5rem;
+  }
+
+  #projection img {
+    width: 90%;
+    max-width: 500px;
+  }
+</style>
